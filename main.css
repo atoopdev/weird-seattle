@@ -1,0 +1,105 @@
+/* takes content size, padding, and border into account when determing size of content */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 0.75rem;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  img{
+      display: block;
+      border: 0;
+      width: 100%;
+      height: auto;
+  }
+
+/* main grid container */
+.site{
+
+}
+
+/* site title */
+
+/* whole header */
+.title{
+
+}
+
+/* title text */
+.site-title{
+
+}
+
+/* all content minus title and footer */
+.main-area{
+
+}
+
+/* splash */
+
+.splash{
+
+}
+
+.splash-content{
+
+}
+
+.splash-text{
+
+}
+
+/* buckets - images plus text */
+.buckets{
+
+}
+
+/* holds single img plus text */
+.bucket{
+
+}
+
+.more{
+
+}
+
+.more-content{
+
+}
+
+.more-title{
+
+}
+
+.top-picks{
+
+}
+
+.top-content{
+
+}
+
+.top-title{
+
+}
+
+.spotlight-picks{
+
+}
+
+.spotlight-content{
+
+}
+
+.spotlight-title{
+    
+}
