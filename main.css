@@ -41,7 +41,7 @@ margin: 0 auto;
 
 /* title text */
 .site-title{
-
+text-align: center;
 }
 
 /* all content minus title and footer */
@@ -75,7 +75,28 @@ margin: 0 auto;
 
 /* holds single img plus text */
 .bucket{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
+/* have title overlay image and fill all available space */
+.bucket-title{
+    padding: 1em;
+    text-align: center;
+    background-color: hsla(0, 0%, 5%, .4);
+    color: white;
+    grid-column: 1;
+    grid-row: 1/2;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+/* place image and title in same grid location */
+.bucket-img{
+    grid-column: 1;
+    grid-row: 1/2;
 }
 
 .more{
