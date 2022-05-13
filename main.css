@@ -102,6 +102,11 @@ margin: 0 auto;
 
 }
 
+.top-picks ul,
+.top-pics li{
+    padding-left: 0;
+}
+
 .spotlight-picks{
 
 }
@@ -177,6 +182,14 @@ align-items: center;
 
 .card-address{
     text-align: center;
+    grid-column: 1;
+    grid-row:3/4;
+}
+
+.card-hours{
+    text-align: center;
+    grid-column: 2;
+    grid-row:3/4;
 }
 
 }
