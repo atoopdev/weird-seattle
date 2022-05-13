@@ -28,7 +28,8 @@
 
 /* main grid container */
 .site{
-
+max-width: 50em;
+margin: 0 auto;
 }
 
 /* site title */
@@ -66,6 +67,11 @@
 .buckets{
 
 }
+
+.buckets ul{
+    padding-left: 0;
+}
+
 
 /* holds single img plus text */
 .bucket{
@@ -108,12 +114,36 @@
     
 }
 
+
+.colophon ul{
+padding-left: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.colophon a{
+    text-decoration: none;
+}
+
 @media screen and (min-width: 700px){
-       .buckets ul{
-           display: flex;
-           justify-content: space-around;
-       }
-       .buckets li{
-           width: 20%;
-       }
+    .site{
+        max-width:none;
+    }
+    .buckets ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .buckets li{
+        width: 20%;
+        padding-left: 0;
+    }
+
+    .colophon ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
