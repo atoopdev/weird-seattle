@@ -160,22 +160,22 @@ align-items: center;
     grid-gap: 0.5em;
 }
 
-.spotlight-img{
+.card-img{
     grid-column: 1;
     grid-row: 1/3;
 }
 
-.spotlight-card-title{
+.card-title{
     grid-column: 2;
     grid-row: 1;
 }
 
-.spotlight-description{
+.card-description{
     grid-column:2;
     grid-row: 2;
 }
 
-.spotlight-address{
+.card-address{
     text-align: center;
 }
 
