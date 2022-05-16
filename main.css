@@ -75,7 +75,6 @@ li {
 /* have title overlay image and fill all available space */
 .bucket-title {
   padding: 1em;
-  /* text-align: center; */
 
   color: white;
   grid-column: 1;
