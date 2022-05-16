@@ -26,6 +26,7 @@ li {
 }
 
 /* main grid container */
+/* basic layout */
 .site {
   max-width: 50em;
   margin: 0 auto;
@@ -138,8 +139,14 @@ li {
 
 @media screen and (min-width: 700px) {
   .site {
+    /* full bleed */
     max-width: none;
   }
+
+  /* define grid */
+
+  /* ------------------------------------------- */
+
   .buckets ul {
     display: flex;
     justify-content: space-around;
