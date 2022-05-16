@@ -1,216 +1,195 @@
 /* takes content size, padding, and border into account when determing size of content */
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 0.75rem;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 0.75rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
 
-  img{
-      display: block;
-      border: 0;
-      width: 100%;
-      height: auto;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  li{
-    list-style-type: none;
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* main grid container */
-.site{
-max-width: 50em;
-margin: 0 auto;
+.site {
+  max-width: 50em;
+  margin: 0 auto;
 }
 
 /* site title */
 
 /* whole header */
-.title{
-
+.title {
 }
 
 /* title text */
-.site-title{
-text-align: center;
+.site-title {
+  text-align: center;
 }
 
 /* all content minus title and footer */
-.main-area{
-
+.main-area {
 }
 
 /* splash */
 
-.splash{
-
+.splash {
 }
 
-.splash-content{
-
+.splash-content {
 }
 
-.splash-text{
-
+.splash-text {
 }
 
 /* buckets - images plus text */
-.buckets{
-
+.buckets {
 }
 
-.buckets ul{
-    padding-left: 0;
+.buckets ul {
+  padding-left: 0;
 }
-
 
 /* holds single img plus text */
-.bucket{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+.bucket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 /* have title overlay image and fill all available space */
-.bucket-title{
-    padding: 1em;
-    text-align: center;
-    background-color: hsla(0, 0%, 5%, .4);
-    color: white;
-    grid-column: 1;
-    grid-row: 1/2;
+.bucket-title {
+  padding: 1em;
+  /* text-align: center; */
 
-    display: flex;
-    align-items: flex-end;
+  color: white;
+  grid-column: 1;
+  grid-row: 1/2;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-color: hsla(0, 0%, 5%, 0.4);
 }
 
 /* place image and title in same grid location */
-.bucket-img{
-    grid-column: 1;
-    grid-row: 1/2;
+.bucket-img {
+  grid-column: 1;
+  grid-row: 1/2;
 }
 
-.more{
-
+.more {
 }
 
-.more-content{
-
+.more-content {
 }
 
-.more-title{
-
+.more-title {
 }
 
-.top-picks{
-
+.top-picks {
 }
 
-.top-content{
-
+.top-content {
 }
 
-.top-title{
-
+.top-title {
 }
 
 .top-picks ul,
-.top-pics li{
+.top-pics li {
+  padding-left: 0;
+}
+
+.spotlight-picks {
+}
+
+.spotlight-content {
+}
+
+.spotlight-title {
+}
+
+.colophon ul {
+  padding-left: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colophon a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  .site {
+    max-width: none;
+  }
+  .buckets ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .buckets li {
+    width: 20%;
     padding-left: 0;
-}
+  }
 
-.spotlight-picks{
+  .colophon ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-}
-
-.spotlight-content{
-
-}
-
-.spotlight-title{
-    
-}
-
-
-
-
-.colophon ul{
-padding-left: none;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-
-
-.colophon a{
-    text-decoration: none;
-}
-
-@media screen and (min-width: 700px){
-    .site{
-        max-width:none;
-    }
-    .buckets ul{
-        display: flex;
-        justify-content: space-around;
-    }
-    .buckets li{
-        width: 20%;
-        padding-left: 0;
-    }
-
-    .colophon ul{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    /* featured spotlight card grid */
-.card{
+  /* featured spotlight card grid */
+  .card {
     padding: 1em 1em;
-    border: 1px solid hsla(0, 0%, 5%, .4);
+    border: 1px solid hsla(0, 0%, 5%, 0.4);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3em 1fr 2em;
     grid-gap: 0.5em;
-}
+  }
 
-.card-img{
+  .card-img {
     grid-column: 1;
     grid-row: 1/3;
-}
+  }
 
-.card-title{
+  .card-title {
     grid-column: 2;
     grid-row: 1;
-}
+  }
 
-.card-description{
-    grid-column:2;
+  .card-description {
+    grid-column: 2;
     grid-row: 2;
-}
+  }
 
-.card-address{
+  .card-address {
     text-align: center;
     grid-column: 1;
-    grid-row:3/4;
-}
+    grid-row: 3/4;
+  }
 
-.card-hours{
+  .card-hours {
     text-align: center;
     grid-column: 2;
-    grid-row:3/4;
-}
-
+    grid-row: 3/4;
+  }
 }
