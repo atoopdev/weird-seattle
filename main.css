@@ -144,7 +144,34 @@ li {
   }
 
   /* define grid */
+  .main-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1em;
+  }
 
+  .splash {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  .buckets {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .spotlight {
+    grid-column: 2/4;
+  }
+
+  .more {
+    grid-column: 2/4;
+  }
+
+  .top-picks {
+    grid-row: span 3;
+  }
   /* ------------------------------------------- */
 
   .buckets ul {
