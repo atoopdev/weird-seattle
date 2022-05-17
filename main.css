@@ -17,7 +17,7 @@ body {
 img {
   display: block;
   border: 0;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -60,17 +60,27 @@ li {
 
 /* buckets - images plus text */
 .buckets {
+  display: flex;
+  flex-direction: column;
 }
 
 .buckets ul {
   padding-left: 0;
 }
 
+.buckets li {
+  padding-bottom: 1em;
+}
+
+/* flex container for buckets */
+
+/* ---------------------------------- buckets image grid ------------------------------------------------ */
+
 /* holds single img plus text */
 .bucket {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
 }
 
 /* have title overlay image and fill all available space */
@@ -89,9 +99,17 @@ li {
 
 /* place image and title in same grid location */
 .bucket-img {
+  /* max-height: 50px; */
   grid-column: 1;
   grid-row: 1/2;
+
+  /* make images same height */
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
+
+/* ------------------------------------------------------------------------------------------------------------ */
 
 .more {
 }
@@ -137,6 +155,8 @@ li {
   text-decoration: none;
 }
 
+/* ----------------------------------------------------------------------------- */
+
 @media screen and (min-width: 700px) {
   .site {
     /* full bleed */
@@ -157,7 +177,7 @@ li {
   }
 
   .buckets {
-    grid-column: 2/4;
+    grid-column: 1/-1;
     grid-row: 2/3;
   }
 
@@ -172,7 +192,9 @@ li {
   .top-picks {
     grid-row: span 3;
   }
-  /* ------------------------------------------- */
+  /* ------------------------------------------------------------------------------------------------- */
+
+  /* flex container for buckets */
 
   .buckets ul {
     display: flex;
@@ -187,6 +209,7 @@ li {
     flex-direction: row;
     justify-content: space-between;
   }
+  /* ---------------------------------------------------------------------------------------------------- */
 
   /* featured spotlight card grid */
   .card {
@@ -226,3 +249,5 @@ li {
     grid-row: 3/4;
   }
 }
+
+/* ---------------------------------------------- end max width 700 -------------------------------------------- */
