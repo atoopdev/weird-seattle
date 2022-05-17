@@ -58,8 +58,9 @@ li {
 .splash-text {
 }
 
+/* --------------------------- buckets basic flexbox --------------------------------- */
 /* buckets - images plus text */
-.buckets {
+.buckets ul {
   display: flex;
   flex-direction: column;
 }
@@ -72,7 +73,7 @@ li {
   padding-bottom: 1em;
 }
 
-/* flex container for buckets */
+/* ------------------------------------------------------------------------------------- */
 
 /* ---------------------------------- buckets image grid ------------------------------------------------ */
 
@@ -171,6 +172,22 @@ li {
 }
 
 /* ----------------------------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+  .buckets ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .buckets li {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  .bucket-img {
+    height: 100px;
+  }
+}
 
 @media screen and (min-width: 1100px) {
   .site {
