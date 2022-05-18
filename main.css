@@ -237,6 +237,8 @@ li {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-gap: 1em;
+
+    font-size: 1.15rem;
     
   }
 
@@ -292,6 +294,8 @@ li {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-gap: 1em;
+
+    font-size: 1.25rem;
   }
 
   .splash {
