@@ -45,6 +45,8 @@ li {
 
 /* all content minus title and footer */
 .main-area {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* splash */
@@ -75,7 +77,7 @@ li {
 
 /* ------------------------------------------------------------------------------------- */
 
-/* ---------------------------------- buckets image grid ------------------------------------------------ */
+/* ---------------------------- buckets image grid ---------------------------------------- */
 
 /* holds single img plus text */
 .bucket {
@@ -84,11 +86,14 @@ li {
   grid-template-rows: auto auto;
 }
 
-/* have title overlay image and fill all available space */
+/* have title overlay image and fill all available space - note works when title is a link, not header */
 .bucket-title {
   padding: 1em;
 
   color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
   grid-column: 1;
   grid-row: 1/2;
 
@@ -170,6 +175,7 @@ li {
 .colophon a {
   text-decoration: none;
   color:white;
+  font-weight:600;
 }
 
 .colophon{
@@ -192,6 +198,10 @@ li {
 
   .bucket-img {
     height: 100px;
+  }
+
+  .bucket-title{
+    font-size: 1rem;
   }
 
 }
@@ -218,13 +228,16 @@ li {
     height: 100px;
   }
 
+  .bucket-title{
+    font-size: 1.25rem;
+  }
+
   .main-area {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-gap: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    
   }
 
   .splash {
