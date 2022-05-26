@@ -386,17 +386,22 @@ li {
 /* --------------------------------------------- Attractions -------------------------------------------- */
 
 .attractions-main{
+ 
 
 }
 
-.attractions-container{
+.attractions-container ul{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
 
 }
 
 .attractions-content{
+  margin: 1em;
 
 }
 
 .attractions-title{
-  
+
 }
