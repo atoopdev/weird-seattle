@@ -25,6 +25,11 @@ li {
   list-style-type: none;
 }
 
+a:hover,
+a:focus{
+  color: red;
+}
+
 /* main grid container */
 /* basic layout */
 .site {
@@ -266,17 +271,6 @@ li {
     grid-row: 4;
   }
 
-   /* flex container for buckets */
-
-   /* .buckets ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  .buckets li {
-    width: 20%;
-    padding-left: 0;
-  } */
-
   .bucket-img {
     height: 125px;
   }
@@ -361,6 +355,7 @@ li {
   .card-title {
     grid-column: 2;
     grid-row: 1;
+    margin: 0;
   }
 
   .card-description {
@@ -378,6 +373,10 @@ li {
     text-align: center;
     grid-column: 2;
     grid-row: 3/4;
+  }
+
+  .card-link{
+    color: rgb(138, 136, 136);
   }
 }
 
