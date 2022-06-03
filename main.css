@@ -131,6 +131,7 @@ a:focus{
   width: 100%;
   overflow: hidden;
   padding-top: 56.25%;
+  margin-bottom: 1em;
 }
 
 .more-title {
@@ -207,6 +208,10 @@ a:focus{
 
   .bucket-title{
     font-size: 1rem;
+  }
+
+  .splash{
+    text-align: center;
   }
 
 }
